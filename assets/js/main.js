@@ -259,4 +259,56 @@
    */
   new PureCounter();
 
-})()
+ function calcularIdade() {
+    // Pega o texto da data de nascimento do elemento com id="data-nascimento"
+    const textoDataNascimento = document.getElementById('data-nascimento').innerText;
+
+    // Converte o texto da data (DD/MM/AAAA) para um objeto de Data do JavaScript
+    const partesData = textoDataNascimento.split('/');
+    const dataNascimento = new Date(partesData[2], partesData[1] - 1, partesData[0]);
+
+    // Pega a data de hoje
+    const hoje = new Date();
+
+    // Calcula a idade
+    let idade = hoje.getFullYear() - dataNascimento.getFullYear();
+    const mes = hoje.getMonth() - dataNascimento.getMonth();
+
+    if (mes < 0 || (mes === 0 && hoje.getDate() < dataNascimento.getDate())) {
+      idade--;
+    }
+
+    // Coloca a idade calculada no elemento com id="idade"
+    document.getElementById('idade').innerText = idade;
+  }
+
+  // Chama a função para que a idade seja calculada assim que a página carregar
+  window.onload = calcularIdade;
+
+  // Função para calcular a idade
+  function calcularIdade() {
+    // Pega o texto da data de nascimento do elemento com id="data-nascimento"
+    const textoDataNascimento = document.getElementById('data-nascimento').innerText;
+
+    // Converte o texto da data (DD/MM/AAAA) para um objeto de Data do JavaScript
+    const partesData = textoDataNascimento.split('/');
+    const dataNascimento = new Date(partesData[2], partesData[1] - 1, partesData[0]);
+
+    // Pega a data de hoje
+    const hoje = new Date();
+
+    // Calcula a idade
+    let idade = hoje.getFullYear() - dataNascimento.getFullYear();
+    const mes = hoje.getMonth() - dataNascimento.getMonth();
+
+    if (mes < 0 || (mes === 0 && hoje.getDate() < dataNascimento.getDate())) {
+      idade--;
+    }
+
+    // Coloca a idade calculada no elemento com id="idade"
+    document.getElementById('idade').innerText = idade;
+  }
+
+  // Chama a função para que a idade seja calculada assim que a página carregar
+  window.onload = calcularIdade;
+</script>
