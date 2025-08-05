@@ -5,18 +5,18 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>iPortfolio Bootstrap Template - Index</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Nicholas Lemos - Designer & Desenvolvedor</title>
+  <meta content="Portfolio profissional de Nicholas Lemos - Designer, Desenvolvedor Web e Freelancer especializado em tecnologia e soluções criativas." name="description">
+  <meta content="nicholas lemos, designer, desenvolvedor, portfolio, freelancer, web design, desenvolvimento" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -26,7 +26,12 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
+  <!-- Modern CSS Files -->
+  <link href="assets/css/modern-style.css" rel="stylesheet">
+  <link href="assets/css/portfolio-gallery.css" rel="stylesheet">
+  <link href="assets/css/animations.css" rel="stylesheet">
+  
+  <!-- Original Template CSS (for compatibility) -->
   <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
@@ -303,7 +308,7 @@
             <h3 class="resume-title">Formação</h3>
             <div class="resume-item">
               <h4>Análise e Desenvolvimento de Sistemas</h4>
-              <h5>2023 - cursando</h5>
+              <h5>2023 - 2025</h5>
               <p><em>UniDomBosco, EAD</em></p>
               <p>Lógica Computacional Aplicada, Sistema de Informação, Sistemas Operacionais, Rede e Arquitetura de
                 Computadores</p>
@@ -327,7 +332,7 @@
             <h3 class="resume-title">Experiencia Professional</h3>
             <div class="resume-item">
               <h4>Assistente Help Desk</h4>
-              <h5>Novembro 2024 - Atual</h5>
+              <h5>Novembro 2024 - Fevereiro 2025</h5>
               <p><em>ZIEVO TECNOLOGIA, Contagem, MG</em></p>
               <ul>
                 <li>Atendimento técnico e suporte remoto para usuários internos e externos.</li>
@@ -371,134 +376,193 @@
         <div class="section-title">
           <h2>Portfolio</h2>
           <p>Projetos realizados para os grupos de RPG que trabalho e alguns modelos exemplo de como seu currículo irá
-            ficar. </p>
+            ficar. Explore meu trabalho e veja como posso ajudar a transformar suas ideias em realidade.</p>
         </div>
 
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
+        <!-- Modern Portfolio Filters -->
+        <div class="portfolio-filters" data-aos="fade-up">
+          <button class="portfolio-filter active" data-filter="*">Todos</button>
+          <button class="portfolio-filter" data-filter=".filter-web">Web Design</button>
+          <button class="portfolio-filter" data-filter=".filter-app">Aplicações</button>
+          <button class="portfolio-filter" data-filter=".filter-tools">Ferramentas</button>
+          <button class="portfolio-filter" data-filter=".filter-design">Design</button>
         </div>
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+        <!-- Modern Portfolio Grid -->
+        <div class="portfolio-grid" data-aos="fade-up" data-aos-delay="200">
+          
+          <!-- Portfolio Item 1 -->
+          <div class="portfolio-item filter-app" data-category="Aplicação RPG">
+            <img src="assets/img/portfolio/portfolio-1.jpg" alt="Calculadora de Atributos">
+            <div class="portfolio-overlay">
+              <h3>Calculadora de Atributos</h3>
+              <p>Sistema para cálculo automático de atributos em jogos de RPG</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="https://nicholemos.github.io/CalculadoradeAtributos/" target="_blank" title="More Details"><i
-                    class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/portfolio-1.jpg" class="portfolio-link lightbox-trigger" data-lightbox="portfolio">
+                  <i class="bi bi-eye"></i>
+                </a>
+                <a href="https://nicholemos.github.io/CalculadoradeAtributos/" target="_blank" class="portfolio-link">
+                  <i class="bi bi-link-45deg"></i>
+                </a>
               </div>
             </div>
+            <div class="portfolio-category">Aplicação</div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+          <!-- Portfolio Item 2 -->
+          <div class="portfolio-item filter-web" data-category="Template Web">
+            <img src="assets/img/portfolio/portfolio-2.jpg" alt="Modelo de Currículo">
+            <div class="portfolio-overlay">
+              <h3>Modelo de Currículo</h3>
+              <p>Template responsivo e moderno para currículos profissionais</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="https://nicholemos.github.io/modelocurriculo/" target="_blank" title="More Details"><i
-                    class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/portfolio-2.jpg" class="portfolio-link lightbox-trigger" data-lightbox="portfolio">
+                  <i class="bi bi-eye"></i>
+                </a>
+                <a href="https://nicholemos.github.io/modelocurriculo/" target="_blank" class="portfolio-link">
+                  <i class="bi bi-link-45deg"></i>
+                </a>
               </div>
             </div>
+            <div class="portfolio-category">Web Design</div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+          <!-- Portfolio Item 3 -->
+          <div class="portfolio-item filter-tools" data-category="Ferramenta RPG">
+            <img src="assets/img/portfolio/portfolio-3.jpg" alt="Calculadora ND Tormenta">
+            <div class="portfolio-overlay">
+              <h3>Calculadora ND Tormenta</h3>
+              <p>Ferramenta especializada para cálculos do sistema Tormenta RPG</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="https://nicholemos.github.io/calculadoraND_Tormenta/" target="_blank" title="More Details"><i
-                    class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/portfolio-3.jpg" class="portfolio-link lightbox-trigger" data-lightbox="portfolio">
+                  <i class="bi bi-eye"></i>
+                </a>
+                <a href="https://nicholemos.github.io/calculadoraND_Tormenta/" target="_blank" class="portfolio-link">
+                  <i class="bi bi-link-45deg"></i>
+                </a>
               </div>
             </div>
+            <div class="portfolio-category">Ferramenta</div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+          <!-- Portfolio Item 4 -->
+          <div class="portfolio-item filter-tools" data-category="Gerador RPG">
+            <img src="assets/img/portfolio/portfolio-4.jpg" alt="Gerador de Monstros">
+            <div class="portfolio-overlay">
+              <h3>Gerador de Monstros</h3>
+              <p>Sistema automatizado para criação de criaturas em jogos de RPG</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="https://nicholemos.github.io/GeradorMonstros/" target="_blank" title="More Details"><i
-                    class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/portfolio-4.jpg" class="portfolio-link lightbox-trigger" data-lightbox="portfolio">
+                  <i class="bi bi-eye"></i>
+                </a>
+                <a href="https://nicholemos.github.io/GeradorMonstros/" target="_blank" class="portfolio-link">
+                  <i class="bi bi-link-45deg"></i>
+                </a>
               </div>
             </div>
+            <div class="portfolio-category">Ferramenta</div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+          <!-- Portfolio Item 5 -->
+          <div class="portfolio-item filter-web" data-category="Site Modelo">
+            <img src="assets/img/portfolio/portfolio-5.jpg" alt="Modelo de Site">
+            <div class="portfolio-overlay">
+              <h3>Modelo de Site</h3>
+              <p>Template moderno e responsivo para sites corporativos</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="https://nicholemos.github.io/modelo_site/" target="_blank" title="More Details"><i
-                    class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/portfolio-5.jpg" class="portfolio-link lightbox-trigger" data-lightbox="portfolio">
+                  <i class="bi bi-eye"></i>
+                </a>
+                <a href="https://nicholemos.github.io/modelo_site/" target="_blank" class="portfolio-link">
+                  <i class="bi bi-link-45deg"></i>
+                </a>
               </div>
             </div>
+            <div class="portfolio-category">Web Design</div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+          <!-- Portfolio Item 6 -->
+          <div class="portfolio-item filter-app" data-category="Sistema Web">
+            <img src="assets/img/portfolio/portfolio-6.jpg" alt="Sistema Domínio">
+            <div class="portfolio-overlay">
+              <h3>Sistema Domínio</h3>
+              <p>Aplicação web para gerenciamento de domínios e territórios</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="https://nicholemos.github.io/Dominio/" target="_blank" title="More Details"><i
-                    class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/portfolio-6.jpg" class="portfolio-link lightbox-trigger" data-lightbox="portfolio">
+                  <i class="bi bi-eye"></i>
+                </a>
+                <a href="https://nicholemos.github.io/Dominio/" target="_blank" class="portfolio-link">
+                  <i class="bi bi-link-45deg"></i>
+                </a>
               </div>
             </div>
+            <div class="portfolio-category">Aplicação</div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="https://miro.medium.com/v2/resize:fit:1080/1*XkyrKb0rgGbDGnubVkNl_A.jpeg" class="img-fluid"
-                alt="">
+          <!-- Portfolio Item 7 -->
+          <div class="portfolio-item filter-tools" data-category="Ferramenta RPG">
+            <img src="https://miro.medium.com/v2/resize:fit:1080/1*XkyrKb0rgGbDGnubVkNl_A.jpeg" alt="Encontros Aleatórios">
+            <div class="portfolio-overlay">
+              <h3>Encontros Aleatórios</h3>
+              <p>Gerador de encontros e eventos para campanhas de RPG</p>
               <div class="portfolio-links">
-                <a href="https://miro.medium.com/v2/resize:fit:1080/1*XkyrKb0rgGbDGnubVkNl_A.jpeg"
-                  data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i
-                    class="bx bx-plus">Encontros Aleatorios</i></a>
-                <a href="https://nicholemos.github.io/EncontrosAleatorios/" target="_blank" title="More Details"><i
-                    class="bx bx-link"></i></a>
+                <a href="https://miro.medium.com/v2/resize:fit:1080/1*XkyrKb0rgGbDGnubVkNl_A.jpeg" class="portfolio-link lightbox-trigger" data-lightbox="portfolio">
+                  <i class="bi bi-eye"></i>
+                </a>
+                <a href="https://nicholemos.github.io/EncontrosAleatorios/" target="_blank" class="portfolio-link">
+                  <i class="bi bi-link-45deg"></i>
+                </a>
               </div>
             </div>
+            <div class="portfolio-category">Ferramenta</div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img
-                src="https://www.uninassau.edu.br/sites/mauriciodenassau.edu.br/files/fields/imagemLateral/noticias/2020/08/414719-pd6stm-77_0.jpg"
-                class="img-fluid" alt="">
+          <!-- Portfolio Item 8 -->
+          <div class="portfolio-item filter-web" data-category="Site Profissional">
+            <img src="https://www.uninassau.edu.br/sites/mauriciodenassau.edu.br/files/fields/imagemLateral/noticias/2020/08/414719-pd6stm-77_0.jpg" alt="Site Advogado">
+            <div class="portfolio-overlay">
+              <h3>Site Advogado</h3>
+              <p>Website profissional para escritório de advocacia</p>
               <div class="portfolio-links">
-                <a href="https://www.uninassau.edu.br/sites/mauriciodenassau.edu.br/files/fields/imagemLateral/noticias/2020/08/414719-pd6stm-77_0.jpg"
-                  data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3">Site Advogado<i
-                    class="bx bx-plus"></i></a>
-                <a href="https://gabrielmelocalculista.github.io" title="More Details" target="_blank"><i
-                    class="bx bx-link"></i></a>
+                <a href="https://www.uninassau.edu.br/sites/mauriciodenassau.edu.br/files/fields/imagemLateral/noticias/2020/08/414719-pd6stm-77_0.jpg" class="portfolio-link lightbox-trigger" data-lightbox="portfolio">
+                  <i class="bi bi-eye"></i>
+                </a>
+                <a href="https://gabrielmelocalculista.github.io" target="_blank" class="portfolio-link">
+                  <i class="bi bi-link-45deg"></i>
+                </a>
               </div>
             </div>
+            <div class="portfolio-category">Web Design</div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details" target="_blank"><i class="bx bx-link"></i></a>
-              </div>
+        </div>
+
+        <!-- Portfolio Info Panel -->
+        <div class="portfolio-info" data-aos="fade-up" data-aos-delay="400">
+          <h3>Sobre Meus Projetos</h3>
+          <div class="info-grid">
+            <div class="info-item">
+              <i class="bi bi-code-slash"></i>
+              <span>Tecnologias: HTML5, CSS3, JavaScript, Python</span>
+            </div>
+            <div class="info-item">
+              <i class="bi bi-palette"></i>
+              <span>Design: Responsivo e Moderno</span>
+            </div>
+            <div class="info-item">
+              <i class="bi bi-speedometer2"></i>
+              <span>Performance: Otimizado para Web</span>
+            </div>
+            <div class="info-item">
+              <i class="bi bi-shield-check"></i>
+              <span>Qualidade: Testado e Validado</span>
             </div>
           </div>
-
+          <p class="portfolio-description">
+            Cada projeto é desenvolvido com foco na experiência do usuário, utilizando as melhores práticas de desenvolvimento web. 
+            Desde ferramentas especializadas para RPG até sites corporativos, busco sempre entregar soluções que combinam 
+            funcionalidade, design atrativo e performance otimizada.
+          </p>
         </div>
 
       </div>
@@ -755,6 +819,11 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  
+  <!-- Modern Portfolio JS -->
+  <script src="assets/js/modern-portfolio.js"></script>
+  <script src="assets/js/interactions.js"></script>
+  
   <script>
     // Função para calcular a idade
     function calcularIdade() {
